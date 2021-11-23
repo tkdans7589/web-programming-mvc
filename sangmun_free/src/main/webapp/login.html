@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>study alone</title>
+
+<link rel="stylesheet" href="resources/login.css"></link>
+
+</head>
+
+<body>
+
+
+	<header>
+		 <a href="http://localhost:8080/sangmun_free/welcome.jsp" class="join">
+		 <h1>혼자만의 스터디 공간 Study Alone</h1></a>
+	</header>
+
+	<nav class="main-nav">
+  			  <ul>
+    		  	 <li><a href="register.html" class="news" target="_self">회원가입</a></li>
+      		 	 <li><a href="login.html" class="join">로그인</a></li>
+      	 		 <li>예약하기</li>
+      		     <li>전체 예약정보</li>
+  			 </ul>
+	</nav>
+		
+
+	<section class="banner">
+		<img src="resources/images/study_room1.jpg" alt="study_banner">
+		<div class="welcome">
+			<form action="http://localhost:8080/sangmun_free/CustomerServlet?key=login" method="post">
+					<ul>
+						<li>ID : <input type="text" name="form_logcusid" autofocus required
+							placeholder="공백없이 입력하세요"></li>
+							
+						<li>PASSWORD : <input type="password" name="form_logcuspassword" required
+							placeholder="공백없이 입력하세요"></li>
+					</ul>		
+				<br>
+					<input type="submit" name="submit" value="보내기">
+					 <input type="reset" name="reset" value="다시 작성">
+			</form>
+
+		</div>
+	</section>
+	
+
+	<footer>
+		<br>
+	</footer>
+	
+</body>
+</html>
