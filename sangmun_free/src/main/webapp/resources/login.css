@@ -1,0 +1,289 @@
+body, ul, li, h1, h2, h3, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+	overflow-x:hidden;  /* 하단 스크롤바 고정 */
+	overflow-y:auto;
+}
+header{
+    background-color: #AAF0D1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    display: inline-block;
+    color: #fff;
+    border: 8px solid #fff;
+    padding: 6px 12px;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+	display: block; margin: 0px auto;
+}
+.banner .welcome{
+    background-color: #fcbc7e;
+   
+    border: 8px solid #fff;
+    border-top-style: double;     
+    border-bottom-style: double; 	/* 경계선 효과  */
+    border-left-style: double; 
+    border-right-style: double; 	
+    text-align:center;
+ 
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+
+    left: 50%; 					/* left , top , transform 박스안에 한가운데로 정렬시키기 */
+    top: 85%; 			
+    transform:translate(-50%, +50%);
+}
+.banner h2{
+    font-size: 50px;
+}
+
+.banner h2 span{
+    font-size: 1.3em;
+}
+nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+    top: 105px;
+    
+}
+nav ul{
+    white-space: nowrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav li{
+	text-align: center;
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join{
+    color: #AAF0D1;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #AAF0D1;
+    font-size: 48px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    width: 100%;
+    height: 300px;
+}
+section.join{
+    background: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 28px;
+    border: 4px solid #fff;
+}
+
+form ul{
+   font-size: 18px;
+    list-style:none; /* form 옆에 생긴기는 볼릿모양 * 없애기.*/
+}
+
+form{
+	    margin: 0 auto;
+        width:500px;	
+   			
+    
+}
+
+footer{
+    background: #AAF0D1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+form input:focus{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+p::selection{
+    background-color: #AAF0D1;
+    color: #fff;
+}
+p::after{
+    content: '...';
+}
+
+/*responsive styles*/
+
+@media screen and (max-width: 1400px) {
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+select {
+  /* 생략 */
+  font-family: "Noto Sansf KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: #444;
+  background-color: #fff;
+
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  margin: 0;
+
+  border: 1px solid #aaa;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+}
+
+select:hover {
+  border-color: #888;
+}
+
+select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+select:disabled {
+  opacity: 0.5;
+}
+
+
+@media screen and (max-width: 560px) {
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
+
+table {
+	border-collapse: collapse;
+	display:inline;
+	text-align: left;
+	line-height: 1.5;
+	margin: 20px 10px;
+	width: 100%;
+	border: 1px solid #fcbc7e;
+}
+
+th, td {
+	border: 1px solid #fcbc7e;
+}
+
+th {
+	width: 147px;
+	padding: 10px;
+	font-weight: bold;
+	vertical-align: top;
+	background: #b9ddfd;
+}
+
+td {
+	width: 349px;
+	padding: 10px;
+	vertical-align: top;
+	background: #000000;
+}
