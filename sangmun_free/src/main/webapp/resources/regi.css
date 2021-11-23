@@ -5,7 +5,7 @@ body, ul, li, h1, h2, h3, a{
 }
 
 body{
-	overflow-x:hidden;  /* 하단 스크롤바 고정 */
+	overflow-x:hidden;
 	overflow-y:auto;
 }
 header{
@@ -35,7 +35,7 @@ header h1{
    
     border: 8px solid #fff;
     border-top-style: double;     
-    border-bottom-style: double; 	/* 경계선 효과  */
+    border-bottom-style: double;
     border-left-style: double; 
     border-right-style: double; 	
     text-align:center;
@@ -44,7 +44,7 @@ header h1{
     padding: 5px;
     position: absolute;
 
-    left: 50%; 					/* left , top , transform 박스안에 한가운데로 정렬시키기 */
+    left: 50%;
     top: 50%; 			
     transform:translate(-50%, +50%);
 }
@@ -128,7 +128,7 @@ form input{
 
 form ul{
    font-size: 18px;
-    list-style:none; /* form 옆에 생긴기는 볼릿모양 * 없애기.*/
+    list-style:none;
 }
 
 form{
@@ -170,7 +170,6 @@ p::after{
     content: '...';
 }
 
-/*responsive styles*/
 
 @media screen and (max-width: 1400px) {
     .banner .welcome h2{
@@ -210,7 +209,6 @@ p::after{
 }
 
 select {
-  /* 생략 */
   font-family: "Noto Sansf KR", sans-serif;
   font-size: 1rem;
   font-weight: 400;

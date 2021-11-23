@@ -5,7 +5,7 @@ body, ul, li, h1, h2, h3, a{
 }
 
 body{
-	overflow-x:hidden;  /* 하단 스크롤바 고정 */
+	overflow-x:hidden;
 	overflow-y:auto;
 }
 header{
@@ -32,10 +32,10 @@ header h1{
 }
 .banner .welcome{
     background-color: #d4ceb8;
-    border-radius: 40px 80px; /* 모서리 둥글게  */
+    border-radius: 40px 80px;
     border: 8px solid #fff;
     border-top-style: double;     
-    border-bottom-style: double; 	/* 경계선 효과  */
+    border-bottom-style: double;
     border-left-style: double; 
     border-right-style: double; 	
     
@@ -155,7 +155,6 @@ p::after{
     content: '...';
 }
 
-/*responsive styles*/
 
 @media screen and (max-width: 1400px) {
     .banner .welcome h2{
