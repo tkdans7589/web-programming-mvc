@@ -1,0 +1,210 @@
+body, ul, li, h1, h2, h3, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+body{
+	overflow-x:hidden;  /* 하단 스크롤바 고정 */
+	overflow-y:auto;
+}
+header{
+    background-color: #AAF0D1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    display: inline-block;
+    color: #fff;
+    border: 8px solid #fff;
+    padding: 6px 12px;
+    border-radius: 36px;
+}
+.banner{
+    position: relative;
+}
+.banner img{
+    display: block; margin: 0px auto;
+}
+.banner .welcome{
+    background-color: #d4ceb8;
+    border-radius: 40px 80px; /* 모서리 둥글게  */
+    border: 8px solid #fff;
+    border-top-style: double;     
+    border-bottom-style: double; 	/* 경계선 효과  */
+    border-left-style: double; 
+    border-right-style: double; 	
+    
+ 
+    color: #fff;
+    padding: 40px;
+    position: absolute;
+    left: 30px;
+    top: 40%;
+}
+.banner h2{
+    font-size: 50px;
+}
+
+
+nav{
+    background-color: #F4F4F4;
+    padding: 20px;
+    top: 105px;
+    
+}
+nav ul{
+    white-space: nowrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav li{
+	text-align: center;
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join{
+    color: #AAF0D1;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #AAF0D1;
+    font-size: 48px;
+}
+article p{
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    width: 100%;
+    height: 300px;
+}
+section.join{
+    background: #F4F4F4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid #fff;
+}
+footer{
+    background: #AAF0D1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+form input:focus{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 4px solid #71d300;
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+p::selection{
+    background-color: #AAF0D1;
+    color: #fff;
+}
+p::after{
+    content: '...';
+}
+
+/*responsive styles*/
+
+@media screen and (max-width: 1400px) {
+    .banner .welcome h2{
+        font-size: 60px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .banner .welcome h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
