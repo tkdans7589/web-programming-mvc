@@ -89,11 +89,6 @@
 					</c:when>
 				</c:choose>
 		</header>
-		 
-
-		<section class="banner">
-   				 <img src="resources/images/study_room1.jpg" alt="study_banner"> 
-		</section>
 
 		<nav class="main-nav">
   			  <ul>
@@ -125,6 +120,11 @@
   			 </ul>
 		</nav>
 		
+		<section class="banner">
+   				 <img src="resources/images/study_room1.jpg" alt="study_banner"> 
+		</section>
+		
+		<footer><br></footer>
 			
 		<main>
   			  <article>
@@ -148,6 +148,5 @@
    			 <p>Study Alone에서 지금 바로 공부해보세요!</p>
       
 	</section>
-		<footer><br></footer>
 </body>
 </html>
